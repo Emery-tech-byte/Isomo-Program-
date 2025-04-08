@@ -7,22 +7,63 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f3f5f7;
+  background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
 }
 
 header {
-  background: #005f73;
-  color: white;
+  background-color: #005f73;
+  color: #fff;
   padding: 2rem 1rem;
   text-align: center;
 }
 
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: #0a9396;
+  margin-top: 1rem;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+nav ul li:hover > .submenu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background: #94d2bd;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  z-index: 1;
+}
+
+.submenu li a {
+  padding: 0.5rem;
+  color: #000;
+}
+
 main {
-  padding: 2rem;
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
+  padding: 2rem;
 }
 
 section {
@@ -30,41 +71,23 @@ section {
 }
 
 h2 {
-  color: #005f73;
+  color: #0a9396;
   margin-bottom: 1rem;
 }
 
-.impact ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.impact li {
-  background: #e0fbfc;
-  margin-bottom: 0.5rem;
-  padding: 0.5rem;
-  border-radius: 6px;
-}
-
-.get-involved .btn {
-  display: inline-block;
+h3 {
+  color: #007f86;
   margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: #0a9396;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background 0.3s;
 }
 
-.get-involved .btn:hover {
-  background-color: #007f86;
+ul {
+  list-style: disc;
+  margin-left: 2rem;
 }
 
 footer {
-  background: #005f73;
+  background-color: #005f73;
   color: white;
   text-align: center;
   padding: 1rem;
-  margin-top: 2rem;
 }
