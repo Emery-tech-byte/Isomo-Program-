@@ -1,97 +1,135 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Isomo Program</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1>Isomo Program</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a>
-          <ul class="submenu">
-            <li><a href="#philosophy">Philosophy</a></li>
-            <li><a href="#history">History</a></li>
-            <li><a href="#leadership">Leadership</a></li>
-            <li><a href="#partners">Our Partners</a></li>
-          </ul>
-        </li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#whatwedo">What We Do</a></li>
-        <li><a href="#gallery">Photo Gallery</a></li>
-        <li><a href="#donate">Donate</a></li>
-        <li><a href="#impact">Impact</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isomo Program</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #0059b3;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #003366;
+        }
+
+        section {
+            display: none;
+            padding: 20px;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        .home-img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Isomo Program</h1>
+    </header>
+
+    <nav>
+        <a href="#" onclick="showSection('about')">About</a>
+        <a href="#" onclick="showSection('blog')">Blog</a>
+        <a href="#" onclick="showSection('what')">What We Do</a>
+        <a href="#" onclick="showSection('gallery')">Photo Gallery</a>
+        <a href="#" onclick="showSection('donate')">Donate</a>
+        <a href="#" onclick="showSection('impact')">Impact</a>
+        <a href="#" onclick="showSection('contact')">Contact</a>
+    </nav>
+
+    <img src="images/home.jpg" alt="Isomo Program Image" class="home-img">
+
     <section id="about">
-      <h2>About</h2>
-      <section id="philosophy">
-        <h3>Philosophy</h3>
-        <p><strong>Mission:</strong> To provide English education to out-of-school children.</p>
-        <p><strong>Vision:</strong> A literate, empowered generation.</p>
-        <p><strong>Goals:</strong> Expand learning opportunities for all children in Rwanda.</p>
-      </section>
-      <section id="history">
-        <h3>History</h3>
-        <p>The Isomo Program started in 2022 with just 23 children and has grown to over 496 students thanks to community support and dedication.</p>
-      </section>
-      <section id="leadership">
-        <h3>Leadership</h3>
-        <p>Our team includes dedicated educators, volunteers, and community leaders under the leadership of founder Emery Twajamahoro.</p>
-      </section>
-      <section id="partners">
-        <h3>Our Partners</h3>
-        <p>We are supported by local government agencies, schools, and compassionate community members.</p>
-      </section>
+        <h2>About</h2>
+        <p><strong>Philosophy:</strong> Empowering youth through education.</p>
+        <p><strong>Mission:</strong> Our mission is to provide English education to out-of-school children which will enable them to explore many different national and global opportunities in the future.</p>
+        <p><strong>Vision:</strong> We strive for a literate, and empowered Rwanda.</p>
+        <p><strong>Goals:</strong> Expanding learning opportunities for all children in Rwanda and turning Isomo Program into a nationwide NGO which serves the bigger community.</p>
+        <p><strong>History:</strong> After firsthand witnessing the impact growing up in poverty with no quality education, Emery Twajamahoro started Isomo Program in 2022 with just 23 children under a mango tree which since then has impacted nearly 500 students, thanks to government support and dedication.</p>
+        <p><strong>Leadership:</strong> Our team includes dedicated high school graduates, volunteers, and community leaders under the leadership of founder Emery Twajamahoro.</p>
+        <p><strong>Our Partners:</strong> We are supported by local government agencies, schools, and compassionate community members.</p>
     </section>
 
     <section id="blog">
-      <h2>Blog</h2>
-      <p>Meet Francine, one of our earliest students who now teaches others. Read how Isomo transformed her life...</p>
+        <h2>Blog</h2>
+        <p>Meet Francine, one of our earliest students who now teaches others. Read how Isomo transformed her life...</p>
     </section>
 
-    <section id="whatwedo">
-      <h2>What We Do</h2>
-      <p>We provide free English literacy education to children who are out of school, empowering them to succeed and grow.</p>
+    <section id="what">
+        <h2>What We Do</h2>
+        <p>We provide free English literacy education to children who are out of school, empowering them to succeed and grow.</p>
     </section>
 
     <section id="gallery">
-      <h2>Photo Gallery</h2>
-      <p>Upload and view photos from our classrooms, events, and student success stories.</p>
+        <h2>Photo Gallery</h2>
+        <p>Welcome to photos from our classrooms, events, and student success stories.</p>
     </section>
 
     <section id="donate">
-      <h2>Donate</h2>
-      <p>You can support us through monetary donations sent via phone number: <strong>+250791799081</strong> or by email: <strong>tasiyanemukamuzima@gmail.com</strong>.</p>
+        <h2>Donate</h2>
+        <p>You can support us through monetary donations sent via phone number: +250791799081 or by email: tasiyanemukamuzima@gmail.com.</p>
     </section>
 
     <section id="impact">
-      <h2>Impact</h2>
-      <ul>
-        <li>496 students reached</li>
-        <li>5 schools involved</li>
-        <li>Government recognition</li>
-        <li>Literacy campaigns conducted</li>
-      </ul>
+        <h2>Impact</h2>
+        <ul>
+            <li>496 students reached</li>
+            <li>5 schools involved</li>
+            <li>Government recognition</li>
+            <li>Literacy campaigns conducted</li>
+        </ul>
     </section>
 
     <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:twajamahoroemery@gmail.com">twajamahoroemery@gmail.com</a></p>
-      <p>Location: Ngoma district, Sake Sector, Rukoma Cell, Nyakariba Village</p>
+        <h2>Contact</h2>
+        <p>Email: twajamahoroemery@gmail.com</p>
+        <p>Location: Ngoma district, Sake Sector, Rukoma Cell, Nyakariba Village</p>
     </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 Isomo Program | Created by Emery Twajamahoro</p>
-  </footer>
+    <script>
+        function showSection(id) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
 </body>
+
 </html>
