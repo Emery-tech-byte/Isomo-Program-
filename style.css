@@ -1,9 +1,7 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
+    background-image: url('images/gallery1.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 header {
